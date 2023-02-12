@@ -1,0 +1,223 @@
+:root {
+    --border-style: 1px solid rgba(0,0,0,.05);
+    --margin: 40px;
+    --text-color: #222;
+    --highlight-color: #ff6f59;
+    --font-size: 24px;
+    --line-height: 36px;
+    --animate-up-distance: 10px;
+    --max-width: 1080px;
+    --max-width-visual: 1280px;
+  }
+  
+  @media only screen and (min-width: 1600px) {
+    :root {
+      --margin: 56px;
+    }
+  }
+  
+  @media only screen and (max-width: 720px) {
+    :root {
+      --font-size: 16px;
+      --line-height: 24px;
+      --margin: 20px;
+    }
+  }
+  
+  html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    background: #fff;
+    color: var(--text-color);
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  a, a:hover {
+    color: var(--text-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  #home-container {
+    margin: 0 auto;
+    padding: var(--margin);
+  }
+  
+  #nav {
+    background: transparent;
+    left: 0;
+    margin-bottom: calc(var(--margin)*4);
+    padding: 20px var(--margin);
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transform: none;
+    transform: none;
+    transition: all .4s;
+    z-index: 1000;
+  }
+  
+  #nav a {
+    color: var(--text-color);
+    font-size: .85em;
+    font-weight: 500;
+    line-height: .5em;
+    margin-right: calc(var(--font-size)*1.5);
+    text-decoration: none;
+  }
+  
+  @media only screen and (max-width: 720px) {
+    #nav a {
+      font-size: 1em;
+    }
+  }
+  
+  #projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-top: calc(var(--margin)*2);
+    margin-left: calc(var(--margin)/-2);
+    margin-right: calc(var(--margin)/-2);
+  }
+  
+  @media only screen and (max-width: 720px) {
+    #projects {
+      margin: calc(var(--margin)*3) 0 0 0;
+    }
+  }
+  
+  .animate-up {
+    animation: animateUp 1s forwards;
+    -webkit-animation: animateUp 1s forwards;
+    opacity: 0;
+    -webkit-transform: translate3d(0,var(--animate-up-distance),0);
+    transform: translate3d(0,var(--animate-up-distance),0);
+  }
+  
+  @keyframes animateUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0,var(--animate-up-distance),0);
+      transform: translate3d(0,var(--animate-up-distance),0);
+    }
+    
+    100% {
+      opacity: 1;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+  }
+  
+  #home-container .project {
+    padding: calc(var(--margin)/2);
+    width: 33%;
+    margin-bottom: calc(var(--margin)*2);
+    font-weight: 500;
+  }
+  
+  @media only screen and (min-width: 1600px) {
+    #home-container .project {
+      width: 25%;
+    }
+  }
+  
+  @media only screen and (max-width: 1240px) {
+    #home-container .project {
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 720px) {
+    #home-container .project {
+      padding: 0;
+      width: 100%;
+    }
+  }
+  
+  .project a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .project img {
+    max-width: 100%;
+  }
+  
+  .project .info {
+    height: 120px;
+    line-height: calc(var(--line-height) - 2px);
+    padding-right: var(--margin);
+    padding-top: 16px;
+  }
+  
+  @media only screen and (max-width: 720px) {
+    .project .info {
+      height: auto;
+      margin-bottom: calc(var(--margin)*1);
+      padding-top: 12px;
+    }
+  }
+  
+  .project .desc {
+    opacity: .4;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-wrapper img {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  ::selection {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: #222222;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #222222;
+  }
