@@ -82,3 +82,7 @@
     padding: 0;
   }
 }
+
+.material-symbols-outlined {
+  font-size: inherit !important;
+}
