@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PRACTICE</title>
+
+  <link rel="stylesheet" href="https://use.typekit.net/igu6dkl.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="twitch.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main>
+    <div id="project-container">
+      <div id="project-wrapper" class="animate-up">
+        <div class="title">
+         <span>Twitch Prime</span>
+        </div>
+        <div class="tags">
+          <span>Independent Project</span>
+          <span>2 Weeks</span>
+        </div>
+        <div class="hero">
+          <img src="uploads/hero-img2.jpg" alt="Key screens">
+        </div>
+        <div class="content">
+          <p class="header">Overview</p>
+          <p class="text">Twitch (in collaboration with Amazon) offers a subscription service titled “Prime” for users who wish to enhance both their streaming and gaming experiences. The service currently provides its members with various benefits as is, key features being free exclusive content for a large library of games, free games, and a free monthly subscription to any streamer. However, these features are only accessible through their website, keeping the experience from mobile users. With this in mind, I explored ways to integrate the Prime service to Twitch’s mobile app and conceptualized a new feature that would further incentivize more Prime subscriptions going forward.</p>
+        </div>
+        <div class="content">
+          <p class="subH">Problem</p>
+          <p class="header">The Prime experience is not accessible on mobile devices</p>
+          <p class="text">The absence of Prime’s features on mobile creates a gap between users who prefer the mobile app versus those who use Twitch’s website. How can the mobile experience be updated to match its web counterpart?</p>
+          <div class="c-img">
+            <img src="uploads/twitchCompare.jpg" alt="Comparing mobile and desktop ui">
+            <img src="uploads/twitchCompare2.jpg" alt="Comparing mobile and desktop ui">
+          </div>
+        </div>
+        <div class="content">
+          <p class="subH">Research</p>
+          <p class="header">The current state of Twitch</p>
+          <p class="text">With Prime’s features currently exclusive to desktop devices, I gathered secondary research to look into how Twitch fared with its current systems in place.</p>
+          <div id="research" class="c-img">
+            <div class="box">
+              <p>A quarter of active users are on Prime subscriptions</p>
+              <p class="subH text">23% of Twitch's monthly active users and 27% of its daily active users are Prime members</p>
+            </div>
+            <div class="box">
+              <p>Lacking mobile presence</p>
+              <p class="subH text">35% of Twitch viewership comes from mobile devices (versus 70% on YouTube Live)</p>
+            </div>
+            <div class="box">
+              <p>A future in favor of Twitch, not the user</p>
+              <p class="subH text">Twitch intends to make revenue split changes in favor of their profits (enticing streamers to run more ads)</p>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <p class="subH">Competitive Analysis</p>
+          <div class="compy-cont">
+            <div class="compy-text">
+              <p class="header">The power of choice</p>
+              <p class="text">Ads are necessary, but frankly, most users don’t care to be interrupted by them. One pain point that I wanted to address was how intrusive ads are on Twitch compared to one of its biggest competitors in YouTube. Based on the secondary statistics below, I concluded that the addition of a “skip ad” feature similar to YouTube’s would be one benefit that would reinforce the need for Prime amongst current Twitch users.</p>
+              <ul>
+                <li>
+                  <span class="highlighter">72%</span> of Twitch viewers said they found ads on the platform to be annoying, while only <span class="highlighter">28%</span> said they found them informative
+                </li>
+                <li>
+                  <span class="highlighter">73%</span> of viewers said they would rather pay a subscription fee to avoid ads altogether, while only <span class="highlighter">11%</span> said they preferred to watch ads to support creators
+                </li>
+                <li>
+                  <span class="highlighter">85%</span> of YouTube viewers skip ads as soon as they can.
+                </li>
+                <li>
+                  <span class="highlighter">70%</span> of YouTube viewers said they were more likely to pay attention to an ad they could skip, compared to an ad they couldn't skip
+                </li>
+              </ul>
+            </div>
+            <div class="compy-img">
+              <img src="uploads/twitch-skipAd.gif" alt="Skip ad" style="border-radius: 30px;">
+            </div>
+          </div>                                
+        </div>
+        <div class="content">
+          <p class="header">Making the design</p>
+          <p class="text">After validating the pain points I presented, I started ideating how and where these new features would blend within the current mobile experience. I wanted these changes to be natural but noticeable for users, so I developed low-fi sketches for general structure, then began committing to the designs that worked within the scope I set.</p>
+          <div class="c-img">
+            <img src="uploads/midFi-screens.jpg" alt="Mid-fidelity wireframes">
+            <img src="uploads/hiFi-screens.jpg" alt="Hi-fidelity wireframes">
+          </div>
+        </div>
+        <div class="content">
+          <p class="header">Style Guide</p>
+          <div class="c-img" style="padding-top: 0px;">
+            <img src="uploads/twitchStyleGuide.jpg" alt="Style Guide">
+          </div>
+        </div>
+        <div class="content">
+          <p class="subH">Final Prototype</p>
+          <div class="compy-cont">
+            <div class="compy-text">
+              <p class="header">Access prime rewards from navigation</p>
+              <p class="text">With the updated UI, rewards are now accessible from the top of the screen. The “create” button was relocated to the bottom nav to accommodate the change.</p>              
+            </div>
+            <div class="compy-img">
+              <img src="uploads/twitch-primeRew.gif" alt="Skip ad" style="border-radius: 30px;">
+            </div>
+          </div>                                
+        </div>
+         <div class="content">
+          <div class="compy-cont">
+            <div class="compy-text">
+              <p class="header">Finish ads in half the time</p>
+              <p class="text">If users are not subscribed to a streamer, they are subject to viewing ads whenever they are run. With Prime, users can bypass these ads in half the time.</p>              
+            </div>
+            <div class="compy-img">
+              <img src="uploads/twitch-skipAd.gif" alt="Skip ad" style="border-radius: 30px;">
+            </div>
+          </div>                                
+        </div>
+        <div class="content">
+          <div class="compy-cont">
+            <div class="compy-text">
+              <p class="header">Sub with Prime on mobile + Updated subscription options for devoted viewers</p>
+              <p class="text">Along with the addition of the Prime sub, mobile users can now access the “tier 2” and “tier 3” subscription options only available on desktop, supporting their favorite creators anywhere at any time.</p>              
+            </div>
+            <div class="compy-img">
+              <img src="uploads/twitch-primeSub.gif" alt="Skip ad" style="border-radius: 30px;">
+            </div>
+          </div>                                
+        </div>
+        <div class="content">
+          <p class="subH">Reflection</p>
+          <p class="header">What’s next?</p>
+          <p class="text">
+            Being that this was my first ever UX project I am proud of the output I was able to create independently. However, even with what I’ve produced here, I do understand there is room for me to grow from this. One key idea I learned during this project specifically was the value of iteration. Referring back to the problem and pain points (constantly) helped guide me to creating and iterating solutions with intention rather than impulse.
+          <br>
+          <br>
+            One thing I’d like to expand upon is gathering primary research and feedback from the user. My insights and design decisions were derived from secondary research throughout this project. With direct feedback from target users through processes such as usability testing, I would be able to properly gauge the success (or failure) of the designs/ prototypes developed.
+          </p>
+        </div>
+        <div>
+          <a href="../">PROJECTS</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
