@@ -174,3 +174,7 @@
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+
+.material-symbols-outlined {
+  font-size: inherit !important;
+}
